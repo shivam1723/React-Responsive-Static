@@ -1,0 +1,65 @@
+.real-time-changes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000; /* Adjust as per your design */
+    color: #fff; /* Adjust as per your design */
+  }
+
+  .real-time-changes.visible {
+    opacity: 1;
+  }
+  
+  .content {
+    max-width: 30%;
+    padding-left: 8%;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .image {
+    max-width: 50%;
+    margin-top:10%;
+    margin-right:15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gradient-box {
+    width:400px;
+    /* width: 100%; */
+    padding-top: 75%; /* This makes the box maintain a 4:3 aspect ratio */
+    background: linear-gradient(135deg, #ff0080 0%, #ff8c00 100%); /* Adjust the gradient as needed */
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .real-time-changes {
+      flex-direction: column;
+    }
+  
+    .content,
+    .image {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .gradient-box {
+        width: 400px;
+      /* width: 100%; */
+      margin-right:0px;
+      margin-left:50px;
+      padding-top: 50%; /* Adjust aspect ratio for mobile if needed */
+    }
+  }
+  
